@@ -111,9 +111,9 @@ jobs:
         with:
           projectBaseDir: code
           args: >
-            -Dsonar.projectKey=InditexTech_${{ steps.version.outputs.github-repository }}
+            -Dsonar.projectKey=PabloCollazoCollarte_${{ steps.version.outputs.github-repository }}
             -Dsonar.projectName=${{ steps.version.outputs.app-name }}
             -Dsonar.projectVersion=${{ steps.version.outputs.app-version }}
             -Dsonar.branch.name=${{ github.base_ref || github.ref_name }}
             -Dsonar.host.url="https://sonarcloud.io/"
-            -Dsonar.organization=inditextech
+            -Dsonar.organization=pablocollazocollarte
